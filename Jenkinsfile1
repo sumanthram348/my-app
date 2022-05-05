@@ -1,0 +1,3 @@
+@Library('sharedlib') _
+
+sharedlib(action = 'clean', package ='package')
