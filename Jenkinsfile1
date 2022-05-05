@@ -1,3 +1,11 @@
 @Library('sharedlib') _
 
-sharedlib(action = 'clean')
+pipeline {
+    agent any{
+        stage('Collecting dependencies') {
+            steps {
+				      sharedlib(action = "clean")
+            }
+		}
+    }
+}
